@@ -1,6 +1,3 @@
-type State = {
-  items: string[];
-};
 
 const $app = document.querySelector('#app');
 

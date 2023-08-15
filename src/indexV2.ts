@@ -28,10 +28,10 @@ class App extends Component {
   template() {
     const { items } = this.state;
     return `
+        <button>추가</button>
         <ul>
           ${items.map((item) => `<li>${item}</li>`).join('')}
         </ul>
-        <button>추가</button>
     `;
   }
 
@@ -43,4 +43,4 @@ class App extends Component {
   }
 }
 
-new App(document.querySelector('#app'));
+new App(document.querySelector('#app')!);
